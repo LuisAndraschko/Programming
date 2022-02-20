@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58333"
+   version="1.1"
+   id="svg1131"
+   sodipodi:docname="V.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1133"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.5"
+     inkscape:cx="301"
+     inkscape:cy="599"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-bbox="true"
+     inkscape:snap-global="true"
+     inkscape:bbox-paths="true" />
+  <defs
+     id="defs1128" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-722.81113,-105.92288)">
+    <path
+       d="m 840.35549,299.86157 c -2.24343,-2.40146 -5.20579,-8.25427 -6.58309,-13.00618 -2.55309,-8.8087 -16.16427,-97.23223 -16.18685,-105.15616 -0.0169,-5.11096 4.88415,-9.76281 10.28089,-9.76281 6.68972,0 10.14736,5.49477 12.16438,19.33146 6.8618,47.07078 9.15601,63.42533 9.15624,65.27083 1.7e-4,1.15809 0.30562,1.80039 0.67887,1.42714 1.2927,-1.29276 14.3577,-43.75286 19.32961,-62.81977 2.74702,-10.53438 5.89062,-19.7214 6.98578,-20.41556 3.42337,-2.16983 11.0841,-1.43264 13.44264,1.2936 5.57966,6.4496 4.23702,13.87499 -11.49,63.54454 -4.40061,13.89809 -9.68292,31.78376 -11.73853,39.74595 -5.69141,22.04511 -7.70354,24.91348 -17.47652,24.91348 -3.045,0 -5.79387,-1.40169 -8.56342,-4.36652 z"
+       style="fill:#000000;stroke-width:1.48642"
+       id="path1268" />
+  </g>
+</svg>

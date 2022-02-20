@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto grande">
+        <!-- É importante colocar imagens nesse formato da tag picture pois assim somos capazes de dizer para o navegador qual imagem utilizar a depender do tamanho da tela. Nesse formato primeiro tenta se carregar a foto da base, no caso a grande, caso a tela seja menor que 1050px a foto média será carregada, e caso a tela seja menor que 750px a poto pequena será carregada -->
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/bom_dia_pessoal.mp3" controls autoplay></audio>
+    <audio controls preload="metadata" autoplay>
+        <source src="midia/bom_dia_pessoal.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue carregar o arquivo de audio, <a href="midia/bom_dia_pessoal.mp3">clique aqui</a> para baixá-lo.</p>
+        <!-- Ao utilizarmos esse formato de tag para o áudio somos capazes de utilizar mais de um arquivo de áudio, o que permite uma maior compatibilidade com vários navegadores já que alguns navegadores não têm a capacidade de reproduzir alguns formatos de áudio. Ao contrário da estrutura picture a preferência é para a fonte (source) do topo. O parâmetro metadata é importante para a velocidade de carregamento da página, já que caso tivessemos utilizado valor auto ao invés de metadata a página só terminaria seu carregamento ao carregar todo o audio, para audios longos como podcast etc o tempo de espera da página seria horroroso. Ao utilizarmos metadata apenas algumas informaçãos do audio são carregadas e a página segue carregando outras partes de seu conteúdo, tornando agradável a experiencia do usuário. -->
+    </audio>
+    
+</body>
+</html>

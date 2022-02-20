@@ -1,0 +1,60 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int get_ipop_size(void);
+int get_fpop_size(int in);
+int calculate_growth_time(int in, int fn);
+
+int main(void)
+{
+    // TODO: Prompt for start size
+    int in = get_ipop_size();
+    
+    // TODO: Prompt for end size
+    int fn = get_fpop_size(in);
+    
+    // TODO: Calculate number of years until we reach threshold
+    int years = calculate_growth_time(in, fn);
+    // TODO: Print number of years
+    printf("Years: %i\n", years);
+}
+
+int get_ipop_size(void)
+{
+    // Ask for initial population
+    int n;
+    do
+    {
+        n = get_int("Type the population initial size (greater than 8): ");
+    }
+    while (n < 9);
+    return n;
+}
+
+int get_fpop_size(int in)
+{
+    // Ask for desired final population
+    int n;
+    do
+    {
+        n = get_int("Type the population final size (at least %i): ", in);
+    }
+    while (n < in);
+    return n;
+}
+
+int calculate_growth_time(int in, int fn)
+{
+    // Determines the annual growth based on the year population, then add that growth to the population.
+    // The process repeats until the lhama population is equal to or greater than the desired population.
+    int annual_growth = (in / 3) - (in / 4);
+    int years = 0;
+    while (in < fn)
+    {
+        //printf("year %i: Lhama pop = %i\n", years, in);
+        in += annual_growth;
+        annual_growth = (in / 3) - (in / 4);
+        years++;
+    }
+    return years;
+}

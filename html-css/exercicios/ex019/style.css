@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id    = em CSS é # (só pode 1 elemento por página HTML)
+    em HTML é class = em CSS é . (pode vários elementos)
+    id sobrepõe class que sobrepõe definição genérica
+*/
+
+body {
+    background-color: #1e1e1e;
+    padding: 2em;
+}
+
+h1.titulos {
+    color: hsl(305, 35%, 50%);
+    font: bold 2em 'Time New Roman';
+    text-align: center;
+    background-color: #000000;
+    border-radius: 13px;
+    padding: 0.5em;
+}
+
+h1#principal {
+    font-size: 3em;
+    text-align: center;
+    padding: 1em 2em 3em;
+}
+
+h2 {
+    color: hsl(305, 35%, 65%);
+}
+
+.basico {
+    color: hsl(305, 35%, 65%);
+}
+.intermediario {
+    color: hsl(305, 44%, 57%);
+}
+.avancado {
+    color: hsl(305, 45%, 54%);
+}
+
+.enfase{
+    background-color: rgb(0, 0, 0);
+    border-radius: 0.5em;
+    color: hsl(305, 45%, 54%);
+    font-weight: bolder;
+}
+
+p {
+    color: hsl(305, 35%, 75%);
+    font: 1.3em 'Time New Roman';
+    text-align: justify;
+}

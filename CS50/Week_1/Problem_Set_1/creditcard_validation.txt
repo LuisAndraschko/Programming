@@ -1,0 +1,264 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+bool check_interval(float check)
+{
+    return (check >= 1 && check < 10); 
+}
+
+
+bool check_digits(long card_n)
+{
+    bool valid = false;
+    bool bcheck13 = check_interval((long double) card_n / 1000000000000);
+    bool bcheck15 = check_interval((long double) card_n / 100000000000000);
+    bool bcheck16 = check_interval((long double) card_n / 1000000000000000);
+    
+    if (bcheck13 || bcheck15 || bcheck16)
+    {
+        valid = true;
+    }
+    return valid;
+}
+
+
+bool check_amex(long card_n)
+{
+    int amex_i = (long double) card_n / 10000000000000;
+    
+    if (amex_i == 34 || amex_i == 37)
+    {
+        return true;
+    }
+    return false;
+}
+
+
+bool check_mc(long card_n)
+{
+    int mc_i = (long double) card_n / 100000000000000;
+    
+    if (mc_i == 51 || mc_i == 52 || mc_i == 53 || mc_i == 54 || mc_i == 55)
+    {
+        return true;
+    }
+    return false;
+}
+
+
+bool check_visa(long card_n)
+{
+    int visa_i13 = (long double) card_n / 1000000000000;
+    int visa_i16 = (long double) card_n / 1000000000000000;
+    
+    if (visa_i13 == 4 || visa_i16 == 4)
+    {
+        return true;
+    }
+    return false;
+}
+
+
+bool get_even(string scard_n)
+{
+    bool even;
+    
+    if (strlen(scard_n) % 2 == 0)
+    {
+        even = true;
+    }
+    else
+    {
+        even = false;
+    }
+    
+    return even;
+}
+
+
+int get_weight1digits_len(string scard_n, bool even)
+{
+    int weight1digit_len;
+    if (even)
+    {
+        weight1digit_len = strlen(scard_n) / 2;
+    }
+    else
+    {
+        weight1digit_len = (strlen(scard_n) + 1) / 2;
+    }
+    return weight1digit_len;
+}
+
+
+int weight1digits_sum(string weight1digits, int weight1digit_len)
+{
+    int sum = 0;
+    int iweight1digits[10];
+    
+    for (int i = 0; i < weight1digit_len; i++)
+    {
+        // The -'0' is necessary because of the way numbers are assigned in ASCII
+        sum += (int) weight1digits[i] - '0';
+    }
+    
+    return sum;
+}
+
+
+int weight2digits_sum(string weight2digits, int weight2digit_len)
+{
+    int sum = 0;
+    int iweight2digits[10];
+    
+    for (int i = 0; i < weight2digit_len; i++)
+    {
+        // The -'0' is necessary because of the way numbers are assigned in ASCII
+        iweight2digits[i] = 2 * ((int) weight2digits[i] - '0');
+        
+        if (iweight2digits[i] > 9)
+        {
+            iweight2digits[i] = (iweight2digits[i] % 10 + 1);
+        }
+        
+        sum += iweight2digits[i];
+    }
+    
+    return sum;
+}
+
+
+bool luhn_algorithm(long card_n)
+{
+    // Generate buffer string
+    char scard_n[20] = {};
+    
+    // Convert long to string and attribute to scard_n
+    sprintf(scard_n, "%li", card_n);
+    
+    // Detecting last position
+    int finalp = strlen(scard_n) - 1;
+    
+    // Detecting even or odd
+    bool even = get_even(scard_n);
+    
+    // Splitted digits strings size
+    int weight1digit_len = get_weight1digits_len(scard_n, even);
+    int weight2digit_len;
+    
+    if (even)
+    {
+        weight2digit_len = weight1digit_len;
+    }
+    else
+    {
+        weight2digit_len = weight1digit_len - 1;
+    }
+
+    // Creating splitted digits strings
+    char weight2digits[10] = {};
+    char weight1digits[10] = {};
+    
+    // Splitting different weight dígits
+    for (int i = finalp; i >= 0; i--)
+    {
+        if (even && i % 2 != 0)
+        {
+            weight1digits[(finalp - i) / 2] = scard_n[i];
+        }
+        else if (even && i % 2 == 0)
+        {
+            weight2digits[(finalp - i - 1) / 2] = scard_n[i];
+        }
+
+        if (!even && i % 2 == 0)
+        {
+            weight1digits[(finalp - i) / 2] = scard_n[i];
+        }
+        else if (!even && i % 2 != 0)
+        {
+            weight2digits[(finalp - i - 1) / 2] = scard_n[i];
+        }
+    }
+    
+    // Summing
+    int sum1 = weight1digits_sum(weight1digits, weight1digit_len);
+    int sum2 = weight2digits_sum(weight2digits, weight2digit_len);
+    int tsum = sum1 + sum2;
+    
+    // Generate buffer string
+    char stsum[3] = {};
+    
+    // Convert int to string and attribute to scard_n
+    sprintf(stsum, "%i", tsum);
+    
+    // Detecting last position
+    int last_digit = strlen(stsum) - 1;
+    
+    // Validating Card
+    if (stsum[last_digit] == '0')
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+int main(void)
+{
+    // Declaring validity variables
+    bool valid_digit_number;
+    bool valid;
+    
+    // Declaring card id
+    char card_type[10];
+    
+    // Getting credit card number
+    long card_n = get_long("Input the credit card number: ");
+    
+    // Checking validity of the number of digits
+    valid_digit_number = check_digits(card_n);
+
+    // Checking if it's AMEX card
+    bool amex = check_amex(card_n);
+     
+    // Checking if it's MASTERCARD card
+    bool mc = check_mc(card_n);
+    
+    // Checking if it's VISA card
+    bool visa = check_visa(card_n);
+    
+    // Checking validity by luhn's algorithm
+    valid = luhn_algorithm(card_n);
+    
+    // Output
+    if (valid && valid_digit_number)
+    {
+        if (amex)
+        {
+            printf("AMEX\n");
+        }
+        else if (mc)
+        {
+            printf("MASTERCARD\n");
+        }
+        else if (visa)
+        {
+            printf("VISA\n");
+        }
+        else
+        {
+            printf("INVALID\n");
+        }
+    }
+    else
+    {
+        printf("INVALID\n");
+    }
+    
+}

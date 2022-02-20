@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+    background-color: dimgray;
+    margin: auto 0px;
+}
+
+header {
+    background-color: white;
+    padding: 5px 1em;
+    margin: 5px 0px;
+}
+
+nav {
+    background-color: lightgray;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+a:hover {
+    background-color: aquamarine;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+main { 
+    background-color: white;
+    padding: 5px 1em;
+    margin: 5px 0px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+footer > p {
+    padding: 8px 0px;
+    margin: 0px;
+}

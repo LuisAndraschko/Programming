@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+h1 {
+    background-color: lightgreen;
+    width: auto;
+    height: 4em;
+    text-align: center;
+
+    border: 10px solid darkgrey;
+
+    padding: 1em 0em;
+
+    margin: 1em auto 2em auto;
+
+    outline: 10px solid black;
+    
+}
+
+a {
+    background-color: lightgreen;
+
+    border: 3px solid black;
+    border-radius: 5px;
+
+    padding: 0px 2px 0px 2px;
+}
+
+a:hover {
+    background-color: lightpink;
+}
+
+p {
+    text-align: center;
+    margin: 2em 1em 1em 1em;
+}

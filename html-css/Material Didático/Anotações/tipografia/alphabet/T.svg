@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58333"
+   version="1.1"
+   id="svg1131"
+   sodipodi:docname="T.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1133"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.5"
+     inkscape:cx="301"
+     inkscape:cy="407"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-bbox="true"
+     inkscape:snap-global="true"
+     inkscape:bbox-paths="true" />
+  <defs
+     id="defs1128" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-722.81113,-105.92288)">
+    <path
+       d="m 850.38981,302.14626 c -5.36389,-3.75691 -6.65761,-16.37874 -6.50846,-63.49498 l 0.13564,-43.21002 -9.11192,-0.95239 c -5.01089,-0.52414 -12.69925,-0.95244 -17.08458,-0.95244 -6.49634,0 -8.64494,-0.6715 -11.59855,-3.62506 -4.61614,-4.61625 -4.62088,-10.28217 -0.0168,-14.89094 3.39269,-3.39269 4.31561,-3.56121 15.13805,-2.76461 6.33877,0.46665 18.50339,1.8662 27.03239,3.11035 8.529,1.24416 24.01506,2.4465 34.41386,2.6719 20.627,0.44711 24.6614,1.94865 24.6614,9.1784 0,9.57617 -5.9933,12.22753 -27.6402,12.22753 h -15.38431 l 0.76091,45.41415 c 0.4186,24.97774 0.8139,47.40789 0.8788,49.84474 0.2116,7.9319 -8.84585,12.23109 -15.68114,7.44337 z"
+       style="fill:#000000;stroke-width:1.47688"
+       id="path1244" />
+  </g>
+</svg>

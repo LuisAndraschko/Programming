@@ -1,0 +1,61 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int get_height(void);
+void pbuilder(int pheight);
+
+int main(void)
+{
+    // My main function is my command center. Fisrt I get the desired height from the user
+    int pheight = get_height();
+
+    // After that I build the pyramids
+    pbuilder(pheight);
+}
+
+int get_height(void)
+{
+    // Here I ask the user the desired height of the pyramid. Then I return the value.
+    int pheight;
+
+    do
+    {
+        pheight = get_int("Please, inform the pyramid height (1 - 8): ");
+    }
+    while (pheight < 1 || pheight > 8);
+
+    return pheight;
+}
+
+
+void pbuilder(int pheight)
+{
+    // Here I did the printing of the pyramids.
+    /* In order to get the printing logic I had to draw a desired output
+       and find a pattern for # and blank spaces */
+    for (int i = 0; i < pheight; i++)
+    {
+        for (int j = 0; j < ((2 * pheight) + 2); j++)
+        {
+            // Spaces between pyramids
+            if (j == pheight || j == (pheight + 1))
+            {
+                printf(" ");
+            }
+            else if (i + j < (pheight - 1) || i + j > (pheight + (2 * i) + 2))
+            {
+                // This If statement prevents trailspaces to the right the second pyramid.
+                if (j > i + (pheight + 2))
+                {
+                    break;
+                }
+                printf(" ");
+            }
+            else
+            {
+                printf("#");
+            }
+        }
+        printf("\n");
+    }
+}

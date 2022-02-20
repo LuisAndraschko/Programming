@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58333"
+   version="1.1"
+   id="svg1131"
+   sodipodi:docname="A.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1133"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.5"
+     inkscape:cx="234"
+     inkscape:cy="407"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-bbox="true"
+     inkscape:snap-global="true"
+     inkscape:bbox-paths="true" />
+  <defs
+     id="defs1128" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-722.81113,-105.92288)">
+    <path
+       d="m 896.76374,302.79523 c -4.25934,-1.76962 -12.2809,-12.86317 -19.21933,-26.57933 l -6.40222,-12.65631 -17.37894,0.48641 c -9.55844,0.26744 -17.81647,0.92412 -18.35121,1.45901 -0.53482,0.53485 -1.98044,4.89198 -3.21278,9.68241 -1.23235,4.79036 -3.69939,10.89824 -5.48229,13.57304 -3.38525,5.07839 -13.13774,10.77742 -18.44308,10.77742 -4.2193,0 -9.05167,-4.3747 -10.20103,-9.23498 -0.95095,-4.02176 -0.0597,-5.26039 9.63527,-13.38883 1.50553,-1.26224 4.79099,-11.04198 8.18875,-24.37513 4.7515,-18.6449 12.08909,-44.99476 17.23892,-61.90614 5.35376,-17.58083 18.76263,-24.93735 27.19282,-14.91865 2.03033,2.41288 7.35904,15.25188 12.21019,29.41946 16.37081,47.8094 25.68907,68.58406 35.20476,78.48709 6.38573,6.64566 7.264,10.90738 3.24524,15.74767 -2.86194,3.44706 -10.02377,5.17236 -14.22507,3.42686 z m -35.99941,-66.64882 c -2.85007,-9.47005 -10.07887,-29.11962 -10.5313,-28.62661 -0.44477,0.48475 -9.62752,33.52823 -9.62752,34.64429 0,0.42282 4.99535,0.7693 11.10073,0.7693 h 11.10062 z"
+       style="fill:#000000;stroke-width:1.48959"
+       id="path952" />
+  </g>
+</svg>
