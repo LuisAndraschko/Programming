@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body {
+    background-color: aliceblue0;
+}
+
+#container {
+    position: relative;
+    height: 96vh;
+    background: purple url("imagens/target001.png") center center no-repeat;
+    background-size: 100% 100%;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#conteudo {
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background: rgba(255, 255, 0, 0.455) url("imagens/target001.png") no-repeat;
+    background-size: 100% 100%;
+    border: 3px solid black;
+    border-radius: 10px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    
+}
