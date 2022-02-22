@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+table {
+    width: 600px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    font: 2em normal Arial;
+}
+
+td, th {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    min-width: 100px;
+}
+
+tr.cinza {
+    background-color: darkgray;
+    color: white;
+    font-size: 1em;
+}
+
+th.esquerda {
+    text-align: left;
+}
