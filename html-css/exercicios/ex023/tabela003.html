@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+    <br>
+    <div>
+        <table class="normal">
+            <caption>Exemplo de Tabela</caption>
+            <thead>
+                <tr>
+                    <td id="corner"> </td>
+                    <th scope="col">A</th>
+                    <th scope="col">B</th>
+                    <th scope="col">C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="index">1</td>
+                    <td>A1</td>
+                    <td>B1</td>
+                    <td>C1</td>
+                </tr>
+                <tr>
+                    <td class="index">2</td>
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+            </tbody>
+        </table>    
+        <br>
+        <table class="indicate">
+            <caption>Exemplo de Tabela</caption>
+            <thead>
+                <tr>
+                    <td id="corner"> </td>
+                    <th scope="col">A</th>
+                    <th scope="col">B</th>
+                    <th scope="col">C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="index">1</td>
+                    <td>A1</td>
+                    <td class="green">B1</td>
+                    <td class="green" id="c1"><p>C1</p></td>
+                </tr>
+                <tr>
+                    <td class="index">2</td>
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table class="normal">
+            <caption>Exemplo de Tabela</caption>
+            <thead>
+                <tr>
+                    <td id="corner"> </td>
+                    <th scope="col">A</th>
+                    <th scope="col">B</th>
+                    <th scope="col">C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="index">1</td>
+                    <td>A1</td>
+                    <td class="green">B1</td>
+                    <td class="green"> </td>
+                </tr>
+                <tr>
+                    <td class="index">2</td>
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table class="exclude">
+            <caption>Exemplo de Tabela</caption>
+            <thead>
+                <tr>
+                    <td id="corner"> </td>
+                    <th scope="col">A</th>
+                    <th scope="col">B</th>
+                    <th scope="col">C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="index">1</td>
+                    <td>A1</td>
+                    <td class="green" colspan="2">B1</td>
+                </tr>
+                <tr>
+                    <td class="index">2</td>
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table class="normal">
+            <caption>Exemplo de Tabela</caption>
+            <thead>
+                <tr>
+                    <td id="corner"> </td>
+                    <th scope="col">A</th>
+                    <th scope="col">B</th>
+                    <th scope="col">C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="index">1</td>
+                    <td>A1</td>
+                    <td class="green" colspan="2">B1</td>
+                </tr>
+                <tr>
+                    <td class="index">2</td>
+                    <td>A2</td>
+                    <td class="green">B2</td>
+                    <td class="green">C2</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table class="merged">
+            <caption>Exemplo de Tabela</caption>
+            <thead>
+                <tr>
+                    <td id="corner"> </td>
+                    <th scope="col">A</th>
+                    <th scope="col">B</th>
+                    <th scope="col">C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="index">1</td>
+                    <td>A1</td>
+                    <td class="green" colspan="2" rowspan="2">B1</td>
+                </tr>
+                <tr>
+                    <td class="index">2</td>
+                    <td>A2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

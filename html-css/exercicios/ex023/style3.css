@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    position: relative;
+}
+
+body > div {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translate(-50%, 0%);
+
+}
+
+table {
+    font: 2em Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    border: 3px solid black;
+    border-collapse: collapse;
+
+    width: 500px;
+}
+
+caption {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+
+    padding: 10px;
+}
+
+td, th {
+    border: 3px solid black;
+
+    padding: 10px;
+
+    text-align: center;
+}
+
+td.index, th, #corner {
+    background-color: rgba(255, 255, 0, 0.6);
+}
+
+td.green {
+    background-color: rgba(0, 128, 0, 0.522);
+}
+
+td > p {
+    margin: 0px auto;
+    padding: 0px;
+    background: rgba(0, 128, 0, 0.522) url("x.png") center center no-repeat;
+    background-size: contain;
+    opacity: 50%;
+    width: 30px;
+}
