@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.container {
+    overflow-x: scroll;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+thead {
+    background: rgba(0, 128, 0, 0.524);
+}
+
+table > thead > tr > th {
+    background: rgba(0, 128, 0);
+    border: 2px solid black;
+    padding: 10px;
+}
+
+td {
+    border: 2px solid black;
+    padding: 10px;
+}
