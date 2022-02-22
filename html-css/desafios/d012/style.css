@@ -18,6 +18,11 @@ a {
     text-decoration: none;
 }
 
+html, body {
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -52,6 +57,7 @@ header > div {
 }
 
 main {
+    background: white;
     padding-bottom: 2em;
 }
 
@@ -59,17 +65,19 @@ main p {
     font-size: 4vw;
     font-family: var(--fonte-3);
     font-weight: lighter;
-    padding-left: 1em;
+}
+
+main div {
+    padding: 10vh 0px 10vh 2em;;
 }
 
 .whiteback {
     background: white fixed;
-    padding: 6em 0px 10em 0px;
 }
 
 #backflower {
     background: url("imagens/background001.jpg") fixed;
-    background-position: center center;
+    background-position: right center;
 }
 
 #backletter {
@@ -78,8 +86,7 @@ main p {
 
 .popped {
     padding: 5em 40% 5em 27px;
-    min-width: 50vw;
-    
+    display: inline-block;
 }
 
 
