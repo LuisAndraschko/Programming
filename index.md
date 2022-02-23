@@ -4,4 +4,4 @@
 
 ## Project Curso em Video
 
-[Project](https://luisandraschko.github.io/Programming/html-css/desafios/CursoemVideoProject/index.html) 
+[Project](https://luisandraschko.github.io/Programming/CursoemVideoProject/) 
