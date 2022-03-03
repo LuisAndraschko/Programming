@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, BooleanField
-from wtforms.validators import DataRequired, Length, Email, EqualTo
-from flaskblog.models import User, Post
+from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
+from flaskblog.models import User
 
 class RegistrationForm(FlaskForm):
     username =  StringField('Username', validators=
@@ -14,7 +14,16 @@ class RegistrationForm(FlaskForm):
                                      [DataRequired(), 
                                      EqualTo('password')])
     submit = SubmitField('Sign Up')
+    print("entrou forms")
 
+    def validate_username(self, username):
+        user = User.query.filter_by(username=username.data).first()
+        print("entrou VALIDATE")
+        if user:
+            print("entrou IF")
+            raise ValidationError('That username is taken. Please choose an unused one.')
+
+ 
 
 class LoginForm(FlaskForm):
     email = StringField('Email', validators=

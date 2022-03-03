@@ -1,6 +1,6 @@
 from flask import render_template, url_for, flash, redirect
 from flaskblog.forms import RegistrationForm, LoginForm
-from flaskblog.forms import User, Post
+from flaskblog.forms import User
 from flaskblog import app, db, bcrypt
 
 
@@ -25,10 +25,11 @@ posts = [
 def home():
     return render_template('home.html', posts=posts)
 
+
 @app.route("/about")
 def about():
-    return render_template('about.html', 
-                           title='About')
+    return render_template('about.html', title='About')
+
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -39,10 +40,10 @@ def register():
         db.session.add(user)
         db.session.commit()
         (flash(f'Your account has been created. You are now able to login!', 'success'))
-        return redirect(url_for('login')) 
-        
+        return redirect(url_for('login'))
     return render_template('register.html', 
                            title='Register', form=form)
+
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
