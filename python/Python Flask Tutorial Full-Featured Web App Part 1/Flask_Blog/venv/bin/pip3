@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/home/luis/Documentos/Programming/python/Python Flask Tutorial Full-Featured Web App Part 1/Flask_Blog/venv/bin/python" "$0" "$@"
+'''exec' "/home/luis/Documentos/Programming/python/Python Flask Tutorial Full-Featured Web App Part 1/Flask_Blog/venv/bin/python3" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re

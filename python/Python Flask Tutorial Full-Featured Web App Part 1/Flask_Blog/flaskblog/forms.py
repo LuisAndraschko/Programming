@@ -14,14 +14,16 @@ class RegistrationForm(FlaskForm):
                                      [DataRequired(), 
                                      EqualTo('password')])
     submit = SubmitField('Sign Up')
-    print("entrou forms")
 
     def validate_username(self, username):
         user = User.query.filter_by(username=username.data).first()
-        print("entrou VALIDATE")
         if user:
-            print("entrou IF")
             raise ValidationError('That username is taken. Please choose an unused one.')
+    
+    def validate_email(self, email):
+            user = User.query.filter_by(email=email.data).first()
+            if user:
+                raise ValidationError('That email is taken. Please choose an unused one.')
 
  
 
