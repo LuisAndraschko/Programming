@@ -1,7 +1,7 @@
 from flaskblog import db, login_manager
 from datetime import datetime
 from flask_login import UserMixin
-
+from PIL import Image
 
 @login_manager.user_loader
 def load_user(user_id):
